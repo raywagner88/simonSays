@@ -92,12 +92,9 @@ function checkScore(event) {
   }
 }
 
-var startGameButton = document.getElementById('buttonStartGame');
-startGameButton.addEventListener('click', startGame);
-
-function startGame() {
+document.getElementById('buttonStartGame').addEventListener('click', function() {
   simonSays.randomizeColor();
-}
+});
 
 function addPush(event) {
   event.target.classList.add('push');
